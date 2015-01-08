@@ -1,13 +1,16 @@
-# Super Simple Tooltips
+## Super Simple Tooltips
 
-##Usage:
+###Usage:
+<code>
+	<span data-tooltip="true" data-tooltip-position="right" data-tooltip-arrow="left" data-tooltip-text="My tooltip text">
+		I am a tooltip!
+	</span>
+</code>
+
+Call the init:
 
 <code>
 
-	<span data-tooltip="true" data-tooltip-position="right" data-tooltip-arrow="left" data-tooltip-text="My tooltip text">Hover me</span>
-	
-	Call the init:
-	
 	superSimpleToolTips.init();
 	
 	If you wish to deactivate the tooltips, call the destroy:
@@ -16,7 +19,7 @@
 	
 </code>
 
-##Settings
+###Settings
 
-Possible tooltip posiotions: top, right, bottom and left. Same goes for the arrow.
+Possible tooltip positions: top, right, bottom and left. Same goes for the arrows.
 
