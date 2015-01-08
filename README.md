@@ -24,4 +24,6 @@ Call the init:
 
 ###Settings
 
-Possible tooltip positions: top, right, bottom and left. Same goes for the arrows.
+Possible tooltip positions: top, right, bottom and left. Same goes for the arrows. The tooltips hides automatically after 4 seconds or any click event.
+
+If you are happy for the defaults, you can grab the minified version.
