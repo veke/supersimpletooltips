@@ -1,5 +1,7 @@
 ## Super Simple Tooltips
 
+See in action: http://codepen.io/anon/pen/VYPpoZ
+
 ###Usage:
 <code>
 
@@ -23,4 +25,3 @@ Call the init:
 ###Settings
 
 Possible tooltip positions: top, right, bottom and left. Same goes for the arrows.
-
