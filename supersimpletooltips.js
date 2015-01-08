@@ -5,20 +5,7 @@
  * Dependencies: jQuery
  *
  * Usage:
- *
- * Add data-attributes to any element like so:
- * <span data-tooltip="true" data-tooltip-position="left" data-tooltip-arrow="right">Im have a tooltip</span>
- *
- * Possible positions: top, right, bottom and left. Use arrow positions respectively.
- * See more from github page: https://github.com/vennamo/supersimpletooltips
- *
- * Activation:
- * 
- * call superSimpleTooltips.init();
- * 
- * If you need to deactive maybe for responsive layouts you can call destroy function.
- *
- * You can change the settings and styles as you like. If you are happy for tooltip funtioning, you can grab the minified version from dist folder.
+ * See github page: https://github.com/vennamo/supersimpletooltips
  *
  * Licence: What licence?
  *
@@ -29,11 +16,14 @@ var superSimpleTooltips = (function() {
 	return {
 	
 		init: function() {
+            
+            $('body').append('<div class="tooltip" id="tooltip"><div class="tooltip-content" id="tooltip-content"></div>');
 			
 			var $tooltipContainer = $('#tooltip'),
 				$tooltipContent   = $('#tooltip-content'),
 				$tooltips         = $('[data-tooltip=true]'),
 				offset            = 10,
+                hide              = 4000,
 				timeout           = null;
 			
 			$tooltips.on({
@@ -79,7 +69,7 @@ var superSimpleTooltips = (function() {
 						
 					$tooltipContainer.css(tooltipCoords).addClass('show');
 					
-					timeout = setTimeout(hideTip, 4000);
+					timeout = setTimeout(hideTip, hide);
 						
 				},
 				mouseleave: hideTip
@@ -103,6 +93,8 @@ var superSimpleTooltips = (function() {
 			var $tooltips = $('[data-tooltip=true]');
 			
 			$tooltips.off('mouseenter');
+            
+            $('#tooltip').remove();
 			
 		}
 	
