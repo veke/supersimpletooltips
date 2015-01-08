@@ -2,13 +2,14 @@
 
 ###Usage:
 <code>
+
 	<span data-tooltip="true" data-tooltip-position="right" data-tooltip-arrow="left" data-tooltip-text="My tooltip text">
 		I am a tooltip!
 	</span>
+	
 </code>
 
 Call the init:
-
 <code>
 
 	superSimpleToolTips.init();
